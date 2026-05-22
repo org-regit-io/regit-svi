@@ -1,0 +1,26 @@
+# cargo-deny configuration for regit-svi (v2 format)
+# https://embarkstudios.github.io/cargo-deny/
+#
+# regit-svi has zero runtime dependencies. This file is a standing guard:
+# it fails CI the moment a dependency (runtime or dev) is added that carries
+# an advisory, a non-allowed licence, or an unknown source.
+
+[advisories]
+ignore = []
+
+[licenses]
+# regit-svi has zero runtime dependencies, so the licence graph of the
+# published crate is the crate itself (Apache-2.0). cargo-deny will flag the
+# licence of the first runtime dependency ever added — extend this list, after
+# review, only with permissive licences when that happens.
+allow = ["Apache-2.0"]
+
+[bans]
+multiple-versions = "warn"
+wildcards         = "deny"
+
+[sources]
+unknown-registry = "deny"
+unknown-git      = "deny"
+allow-registry   = ["https://github.com/rust-lang/crates.io-index"]
+allow-git        = []

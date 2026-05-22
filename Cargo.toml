@@ -1,0 +1,30 @@
+[package]
+name         = "regit-svi"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"
+license      = "Apache-2.0"
+description  = "Arbitrage-free SVI volatility surfaces in pure Rust. Raw, Jump-Wings and SSVI parametrisations, calibration, and static-arbitrage checks. Zero dependencies."
+repository   = "https://github.com/org-regit-io/regit-svi"
+homepage     = "https://www.regit.io"
+authors      = ["Nicolas Koenig <nicolas.koenig@regit.io>"]
+keywords     = ["svi", "volatility", "options", "finance", "quant"]
+categories   = ["finance", "mathematics", "science"]
+readme       = "README.md"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+
+[dependencies]
+# Runtime dependencies: none. The crate is std-only and zero-dependency by
+# design — see README.md and MATH.md. Every optimiser and solver is hand-rolled
+# from its primary source.
+
+[dev-dependencies]
+approx    = "0.5"
+proptest  = "1"
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name    = "svi"
+harness = false
