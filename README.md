@@ -60,7 +60,7 @@ made auditable.
 
 ```toml
 [dependencies]
-regit-svi = "0.1"
+regit-svi = "1.0"
 ```
 
 ```rust

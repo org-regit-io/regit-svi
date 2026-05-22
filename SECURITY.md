@@ -7,9 +7,7 @@
 
 | Version | Supported |
 |---------|-----------|
-| 0.x     | Yes (pre-release) |
-
-The supported-version table is updated to `1.x` on the first stable release.
+| 1.x     | Yes       |
 
 ## Reporting a Vulnerability
 

@@ -1,6 +1,6 @@
 [package]
 name         = "regit-svi"
-version      = "0.1.0"
+version      = "1.0.0"
 edition      = "2024"
 rust-version = "1.85"
 license      = "Apache-2.0"
@@ -8,7 +8,7 @@ description  = "Arbitrage-free SVI volatility surfaces in pure Rust. Raw, Jump-W
 repository   = "https://github.com/org-regit-io/regit-svi"
 homepage     = "https://www.regit.io"
 authors      = ["Nicolas Koenig <nicolas.koenig@regit.io>"]
-keywords     = ["svi", "volatility", "options", "finance", "quant"]
+keywords     = ["svi", "volatility", "volatility-surface", "options", "calibration"]
 categories   = ["finance", "mathematics", "science"]
 readme       = "README.md"
 

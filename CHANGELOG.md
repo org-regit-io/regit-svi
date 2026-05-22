@@ -8,7 +8,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.0] — 2026-05-22
+
+First stable release. The public API is frozen under semantic versioning.
 
 ### Added — library implementation
 
@@ -132,4 +134,4 @@ runtime dependencies and compiles cleanly to `wasm32-unknown-unknown`.
   target added to `Cargo.toml`; `deny.toml` licence allow-list extended to
   cover the permissive dev-dependency tree
 
-[Unreleased]: https://github.com/org-regit-io/regit-svi/commits/main
+[1.0.0]: https://github.com/org-regit-io/regit-svi/releases/tag/v1.0.0
