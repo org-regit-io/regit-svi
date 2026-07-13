@@ -8,6 +8,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] — 2026-07-13
+
+### Changed
+
+- Bumped the `criterion` dev-dependency from `0.5` to `0.8`. This is a
+  dev/bench-only dependency update: no runtime dependencies were added, and
+  the public API is unchanged.
+
 ## [1.0.0] — 2026-05-22
 
 First stable release. The public API is frozen under semantic versioning.
@@ -134,4 +142,5 @@ runtime dependencies and compiles cleanly to `wasm32-unknown-unknown`.
   target added to `Cargo.toml`; `deny.toml` licence allow-list extended to
   cover the permissive dev-dependency tree
 
+[1.0.1]: https://github.com/org-regit-io/regit-svi/releases/tag/v1.0.1
 [1.0.0]: https://github.com/org-regit-io/regit-svi/releases/tag/v1.0.0
