@@ -14,13 +14,14 @@
 //! | Quasi-explicit slice calibrate  | < 2 ms   |
 //! | Levenberg-Marquardt polish      | < 500 us |
 
-use criterion::{Criterion, black_box, criterion_group, criterion_main};
+use criterion::{Criterion, criterion_group, criterion_main};
 use regit_svi::arbitrage::{butterfly_scan, g};
 use regit_svi::calibration::{least_squares, quasi_explicit};
 use regit_svi::convert::{jw_to_raw, raw_to_jw};
 use regit_svi::raw::RawSvi;
 use regit_svi::ssvi::{Phi, Ssvi};
 use regit_svi::types::Quote;
+use std::hint::black_box;
 
 // ─── Fixtures ────────────────────────────────────────────────────────────────
 

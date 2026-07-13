@@ -1,6 +1,6 @@
 [package]
 name         = "regit-svi"
-version      = "1.0.0"
+version      = "1.0.1"
 edition      = "2024"
 rust-version = "1.85"
 license      = "Apache-2.0"
@@ -23,7 +23,7 @@ pedantic = { level = "warn", priority = -1 }
 [dev-dependencies]
 approx    = "0.5"
 proptest  = "1"
-criterion = { version = "0.5", features = ["html_reports"] }
+criterion = { version = "0.8", features = ["html_reports"] }
 
 [[bench]]
 name    = "svi"
